@@ -1,6 +1,6 @@
 # spring-circuit-breaker
 
-Exemplo de arquitetura de micro serviço configurada com spring que utiliza o circuit breaker (Hystrix - Netflix)
+Exemplo de arquitetura de micro serviço configurada com spring-cloud e spring boot que utiliza o circuit breaker (Hystrix - Netflix)
 
 Requirements:
 ```
@@ -17,7 +17,7 @@ Na IDE de preferência -> Run as BookStoreAppApplication.java
 ```
 Terceiro
 ```
-Na IDE de preferência -> Run as ReadingAppApplication.java ou execute mvn spring-boot:run d root directory of the application
+Na IDE de preferência -> Run as ReadingAppApplication.java
 ```
 ou
 ```
@@ -38,6 +38,6 @@ Primeiro request: http://localhost:8080/to-read
 Segundo request http://localhost:8080/to-buy
 ```
 
-* Faça as requests normalmente com todos os serviços no ar, após verificar que está tudo funcionando, derrube a aplicação BookStoreAppApplication e comece as requests novamente após 20 tentativas o circuito irá abrir (open) você poderá confirmar isso através do dashboard do Hystrix.
+*Faça as requests normalmente com todos os serviços no ar, após verificar que está tudo funcionando, derrube a aplicação BookStoreAppApplication e comece as requests novamente após 20 tentativas o circuito irá abrir (open) você poderá confirmar isso através do dashboard do Hystrix.
 
 
